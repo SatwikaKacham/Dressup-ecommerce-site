@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --secoundary: #b3b3b4;
+    --secoundary-black: #272727;
+    --primary: #ff3e6c;
+    --gray-text: #535665;
+    --success: green;
+    --warning: #f9a61a;
+    --danger: #f34648;
+    --success-light: rgb(156, 216, 156);
+    --warning-light: #f8e0b7;
+    --danger-light: #f7b2b3;
+    --secoundary-gray: #4e4f53;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2.5rem 3.5rem;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid var(--secoundary);
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 3px var(--secoundary);
+}
+
+.input-form {
+    margin: 0;
+    width: fit-content;
+}
+
+.nav-icons li a {
+    text-decoration: none;
+    color: var(--secoundary-gray);
+}
+
+.ecommerce-sub-heading {
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-top: 0;
+}
+
+.primary-button {
+    margin: 1rem;
+}
+
+.login-tag-line {
+    font-size: 1rem;
+    font-weight: 600;
+}
