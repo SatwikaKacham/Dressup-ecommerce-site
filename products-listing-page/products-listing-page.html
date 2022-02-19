@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-listing-page</title>
+    <link rel="icon" href="images/dressup-logo.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://codesup-component-library.netlify.app/all_components_css.css">
+    <link rel="stylesheet" href="products-listing-page.css">
+</head>
+
+<body>
+
+    <!-- navgation -->
+
+    <nav class="nav-container">
+        <div class="nav-logo-and-title">
+            <img class="nav-logo" src="images/dressup-logo.png" alt="">
+            <div class="nav-title"> DressUp</div>
+        </div>
+
+        <div class="nav-navigators">
+            <a class="nav-navigator-item" href="#">Home</a>
+            <a class="nav-navigator-item" href="/products-listing-page/products-listing-page.html">Products</a>
+
+
+        </div>
+
+        <div class="nav-search">
+            <span class="material-icons-outlined">
+                  search
+              </span>
+            <input type="text" placeholder="Search for products....">
+        </div>
+
+        <ul class="nav-icons">
+            <li><span class="material-icons-outlined icon">
+                      <a href="/login-page/login-page.html">  account_circle</a>
+                       </span>
+            </li>
+
+            <li>
+                <div class="badge-container">
+                    <span class="material-icons-outlined icon">
+                        <a href="/wishlist-page/wishlist-page.html">   favorite_border </a>
+                        </span>
+                    <div class="icon-badge">5</div>
+                </div>
+            </li>
+            <li>
+                <div class="badge-container">
+                    <span class="material-icons-outlined icon">
+                        <a href="/cart-page/cart-page.html"> shopping_cart</a>
+                         </span>
+                    <div class="icon-badge">3</div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="side-bar-and-all-products">
+        <aside class="products-listing-page-sidebar">
+            <div class="filter-container">
+                <span class="material-icons-outlined menu-toggle-button">
+                menu
+                </span>
+                <div class="sidebar-heading">Filters</div>
+                <a class="filter-link" href="#">Clear</a>
+            </div>
+
+            <div class="all-filter-items-container">
+                <div class="category-container">
+                    <div class="sidebar-heading">Category</div>
+                    <div class="category-all-input-items">
+                        <div class="input-data-item">
+                            <input type="checkbox" name="terms">
+                            <label for="men-clothing">Men </label>
+                        </div>
+                        <div class="input-data-item">
+                            <input type="checkbox" name="terms">
+                            <label for="men-clothing">Women </label>
+                        </div>
+                        <div class="input-data-item">
+                            <input type="checkbox" name="terms">
+                            <label for="men-clothing">Boy</label>
+                        </div>
+                        <div class="input-data-item">
+                            <input type="checkbox" name="terms">
+                            <label for="men-clothing">Girl </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-container">
+                    <div class="sidebar-heading">Rating </div>
+                    <div class="rating-all-input-items">
+                        <div class="input-data-item">
+                            <input type="radio" name="rating">
+                            <label for="4star"> 4 Stars & above</label>
+                        </div>
+                        <div class="input-data-item">
+                            <input type="radio" name="rating">
+                            <label for="3star"> 3 Stars & above</label>
+                        </div>
+                        <div class="input-data-item">
+                            <input type="radio" name="rating">
+                            <label for="2star"> 2 Stars & above</label>
+                        </div>
+                        <div class="input-data-item">
+                            <input type="radio" name="rating">
+                            <label for="1star"> 1 Stars & above</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sortby-container">
+                    <div class="sidebar-heading">Sort By </div>
+                    <div class="sortby-all-input-items">
+                        <div class="input-data-item">
+                            <input type="radio" name="sortby">
+                            <label for="4star"> price - low to high</label>
+                        </div>
+                        <div class="input-data-item">
+                            <input type="radio" name="sortby">
+                            <label for="3star"> price - high to low</label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="products-listing-page-all-products-container">
+            <!-- all products -->
+
+            <div class="card-container">
+                <div class="card-image-and-header">
+                    <img class="card-image" src="images/cart-image.png">
+                    <span class="material-icons-outlined heart-icon-badge">
+                    favorite_border
+                    </span>
+                    <header class="card-heading">
+                        <div class="card-head"><b>Levis</b></div>
+                        <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                    </header>
+
+                </div>
+
+                <div class="card-price-tag">
+                    <div class="card-price">Rs. 1874 </div>
+                    <small class="card-price-note">inclusive of all taxes</small>
+                </div>
+
+                <div class="card-buttons">
+                    <button class="primary-icon-button">  
+                        <span class="material-icons-outlined"> shopping_cart</span>
+                         Add to Cart
+                         </button>
+                </div>
+            </div>
+
+            <!-- card with text badge -->
+
+            <div class="card-container">
+
+
+                <div class="card-image-and-header">
+                    <img class="card-image" src="images/cart-image.png">
+                    <div class="text-badge">
+                        New
+                    </div>
+                    <span class="material-icons-outlined heart-icon-badge">
+                        favorite_border
+                        </span>
+                    <header class="card-heading">
+                        <div class="card-head"><b>Levis</b></div>
+                        <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                    </header>
+
+                </div>
+
+                <div class="card-price-tag">
+                    <div class="card-price">Rs. 1874 </div>
+                    <small class="card-price-note">inclusive of all taxes</small>
+                </div>
+
+                <div class="card-buttons">
+                    <button class="primary-icon-button">  
+                            <span class="material-icons-outlined"> shopping_cart</span>
+                            Add to Cart
+                        </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-container">
+                <div class="card-image-and-header">
+                    <img class="card-image" src="images/cart-image.png">
+                    <span class="material-icons-outlined heart-icon-badge">
+                    favorite_border
+                    </span>
+                    <header class="card-heading">
+                        <div class="card-head"><b>Levis</b></div>
+                        <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                    </header>
+
+                </div>
+
+                <div class="card-price-tag">
+                    <div class="card-price">Rs. 1874 </div>
+                    <small class="card-price-note">inclusive of all taxes</small>
+                </div>
+
+                <div class="card-buttons">
+                    <button class="primary-icon-button">  
+                        <span class="material-icons-outlined"> shopping_cart</span>
+                         Add to Cart
+                         </button>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-image-and-header">
+                    <img class="card-image" src="images/cart-image.png">
+                    <span class="material-icons-outlined heart-icon-badge">
+                    favorite_border
+                    </span>
+                    <header class="card-heading">
+                        <div class="card-head"><b>Levis</b></div>
+                        <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                    </header>
+
+                </div>
+
+                <div class="card-price-tag">
+                    <div class="card-price">Rs. 1874 </div>
+                    <small class="card-price-note">inclusive of all taxes</small>
+                </div>
+
+                <div class="card-buttons">
+                    <button class="primary-icon-button">  
+                        <span class="material-icons-outlined"> shopping_cart</span>
+                         Add to Cart
+                         </button>
+                </div>
+            </div>
+
+
+            <div class="card-container">
+                <div class="card-image-and-header">
+                    <img class="card-image" src="images/cart-image.png">
+                    <span class="material-icons-outlined heart-icon-badge">
+                    favorite_border
+                    </span>
+                    <header class="card-heading">
+                        <div class="card-head"><b>Levis</b></div>
+                        <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                    </header>
+
+                </div>
+
+                <div class="card-price-tag">
+                    <div class="card-price">Rs. 1874 </div>
+                    <small class="card-price-note">inclusive of all taxes</small>
+                </div>
+
+                <div class="card-buttons">
+                    <button class="primary-icon-button">  
+                        <span class="material-icons-outlined"> shopping_cart</span>
+                         Add to Cart
+                         </button>
+                </div>
+            </div>
+
+            <script type="text/javascript" src="products-listing-page.js"></script>
+
+</body>
+
+</html>
