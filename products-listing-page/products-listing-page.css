@@ -167,8 +167,9 @@ body {
         width: 16.5rem;
         border-right: 2px solid var(--primary);
         position: sticky;
-        top: 0;
+        top: 4rem;
         bottom: 0;
+        height: calc(100vh - 4rem);
     }
     .filter-container {
         margin-left: 1rem;
