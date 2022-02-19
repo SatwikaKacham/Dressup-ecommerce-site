@@ -46,6 +46,22 @@ body {
     color: var(--secoundary-gray);
 }
 
+.nav-icons {
+    margin-left: auto;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.nav-navigators {
+    display: none;
+}
+
+.nav-search {
+    display: none;
+}
+
 .ecommerce-sub-heading {
     font-size: 1.5rem;
     margin: 1rem;
@@ -59,4 +75,19 @@ body {
 .login-tag-line {
     font-size: 1rem;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 650px) {
+    .nav-search {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .nav-navigators {
+        display: flex;
+    }
+    .nav-search {
+        display: flex;
+    }
 }

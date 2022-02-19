@@ -22,6 +22,27 @@ body {
     --secoundary-gray: #4e4f53;
 }
 
+.nav-icons li a {
+    text-decoration: none;
+    color: var(--secoundary-gray);
+}
+
+.nav-icons {
+    margin-left: auto;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.nav-navigators {
+    display: none;
+}
+
+.nav-search {
+    display: none;
+}
+
 .signin-container {
     display: flex;
     flex-direction: column;
@@ -44,11 +65,6 @@ body {
     width: 16rem;
 }
 
-.nav-icons li a {
-    text-decoration: none;
-    color: var(--secoundary-gray);
-}
-
 .ecommerce-sub-heading {
     font-size: 1.5rem;
     margin: 1rem;
@@ -62,4 +78,19 @@ body {
 .signin-tag-line {
     font-size: 1rem;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 650px) {
+    .nav-search {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .nav-navigators {
+        display: flex;
+    }
+    .nav-search {
+        display: flex;
+    }
 }
