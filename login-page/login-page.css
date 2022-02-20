@@ -26,8 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    margin: auto;
-    margin-top: 3rem;
+    margin: 3rem auto;
     padding: 2.5rem 3.5rem;
     align-items: center;
     width: fit-content;
@@ -75,6 +74,59 @@ body {
 .login-tag-line {
     font-size: 1rem;
     font-weight: 600;
+}
+
+.foot {
+    width: 100%;
+    background-color: var(--secoundary-black);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+.footer-item-link {
+    list-style-type: none;
+}
+
+.footer-initem {
+    display: inline;
+    font-size: 25px;
+}
+
+.footer-item {
+    color: var(--secoundary);
+    padding: 10px;
+}
+
+.footer-made-stmt {
+    color: var(--secoundary);
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+}
+
+.footer-gmail-phone {
+    color: var(--primary);
+    font-size: 0px;
+}
+
+.nav-active {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+    .footer-gmail-laptop {
+        display: none;
+        padding: 0px;
+    }
+    .footer-gmail-phone {
+        font-size: 25px;
+        color: var(--secoundary);
+        padding: 2px;
+    }
+    .foot {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @media only screen and (min-width: 650px) {

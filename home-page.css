@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --secoundary: #b3b3b4;
+    --secoundary-black: #272727;
+    --primary: #ff3e6c;
+    --gray-text: #535665;
+    --success: green;
+    --warning: #f9a61a;
+    --danger: #f34648;
+    --success-light: rgb(156, 216, 156);
+    --warning-light: #f8e0b7;
+    --danger-light: #f7b2b3;
+    --secoundary-gray: #4e4f53;
+    --light-gray: #f0f0f0;
+}
+
+.nav-icons li a {
+    text-decoration: none;
+    color: var(--secoundary-gray);
+}
+
+.nav-active {
+    color: var(--primary);
+}
+
+.nav-icons {
+    margin-left: auto;
+}
+
+.nav-container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-navigators {
+    display: none;
+}
+
+.nav-search {
+    display: none;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.home-page-image-slides {
+    display: flex;
+    overflow: hidden;
+    margin: 1rem;
+    position: relative;
+}
+
+.home-page-image-slides input {
+    display: none;
+}
+
+.slide-image img {
+    height: 20rem;
+    width: 100vw;
+}
+
+.slides-manual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.slide-manual-button {
+    height: 1.2rem;
+    width: 1.2rem;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.slide-manual-button:hover {
+    background-color: var(--primary);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -110%;
+}
+
+#radio3:checked~.first {
+    margin-left: -220%;
+}
+
+#radio3:checked~.men-clothing-description-and-button {
+    display: none;
+}
+
+.men-clothing-description-and-button {
+    position: absolute;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 60%;
+    margin-top: 10%;
+    width: 30%;
+}
+
+.home-page-button {
+    text-decoration: none;
+    color: white;
+}
+
+.all-categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.category-img-and-head-container img {
+    width: 18rem;
+    height: 10rem;
+}
+
+.category-img-and-head-container {
+    position: relative;
+    width: fit-content;
+}
+
+.page-sub-heading {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+
+.foot {
+    width: 100%;
+    background-color: var(--secoundary-black);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+.footer-item-link {
+    list-style-type: none;
+}
+
+.footer-initem {
+    display: inline;
+    font-size: 25px;
+}
+
+.footer-item {
+    color: var(--secoundary);
+    padding: 10px;
+}
+
+.footer-made-stmt {
+    color: var(--secoundary);
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+}
+
+.footer-gmail-phone {
+    color: var(--primary);
+    font-size: 0px;
+}
+
+.nav-active {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+    .footer-gmail-laptop {
+        display: none;
+        padding: 0px;
+    }
+    .footer-gmail-phone {
+        font-size: 25px;
+        color: var(--secoundary);
+        padding: 2px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .nav-search {
+        display: flex;
+    }
+    .slide-image img {
+        height: 30rem;
+    }
+    #radio1:checked~.first {
+        margin-left: 0;
+    }
+    #radio2:checked~.first {
+        margin-left: -105%;
+    }
+    #radio3:checked~.first {
+        margin-left: -210%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .nav-navigators {
+        display: flex;
+    }
+    .nav-search {
+        display: flex;
+    }
+    .slide-image img {
+        height: calc(90vh - 5rem);
+    }
+    .category-img-and-head-container img {
+        width: 30rem;
+        height: 15rem;
+    }
+}
